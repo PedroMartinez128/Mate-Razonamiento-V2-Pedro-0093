@@ -1,0 +1,325 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMOcZ3yRwmjGV/ANWLCDwBT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/PedroMartinez128/Mate-Razonamiento-V2-Pedro-0093/blob/main/Prueba%20para%20el%20examen\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Pedro Martinez NL = 34 Fecha 15/marzo/2026\n",
+        "\n",
+        "#### Problema 1: $x + 8 = 15$\n",
+        "* Planteamiento: Buscamos un número que al sumarle 8 nos dé 15.\n",
+        "* Despeje: Restamos 8 en ambos lados para dejar a la $x$ sola.$$x = 15 - 8$$\n",
+        "* Resultado: $x = 7$"
+      ],
+      "metadata": {
+        "id": "PVa7SipvyQ67"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Lh_n4hLkyO8l",
+        "outputId": "e5541051-1f47-4ed1-cfb7-d6dd43a38b7e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el valor: 8\n",
+            "Ingrese el valor: 15\n",
+            "X = 7\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Problema 1 : x + 8 = 15\n",
+        "# Valor_conocio = 8\n",
+        "# Resultado_final = 15\n",
+        "valor_conocido = int(input(\"Ingrese el valor: \"))\n",
+        "Resultado_final = int(input(\"Ingrese el valor: \"))\n",
+        "\n",
+        "X = Resultado_final - valor_conocido\n",
+        "print(f\"X = {X}\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Problema 3: $12 = m + 3m.\n",
+        "$Planteamiento: El número 12 es igual a la suma de una cantidad más el triple de esa misma cantidad.\n",
+        "1. Despeje:Simplificamos el lado derecho: $m + 3m = 4m$.\n",
+        "2. La ecuación queda: $12 = 4m$.\n",
+        "3. Dividimos ambos lados entre 4: $m = 12 / 4$.\n",
+        "* Resultado: $m = 3$"
+      ],
+      "metadata": {
+        "id": "R8_qlsaZ0mSR"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problema 3:  12 = 3m + m\n",
+        "# resultao_final\n",
+        "# valor_conocdo\n",
+        "resultado_final = int(input(\"Ingrese el valor: \"))\n",
+        "valor_conocido = int(input(\"Ingrese el valor: \"))\n",
+        "\n",
+        "m = resultado_final / (1 + valor_conocido)\n",
+        "print(f\"m = {m}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6sWRtHpZ0mh2",
+        "outputId": "b90332dc-46dc-46c6-ad0c-47202bd4e2de"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el valor: 12\n",
+            "Ingrese el valor: 3\n",
+            "m = 3.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Problema 5: $6a - 2a + a = 20\n",
+        "$Planteamiento: Una combinación de sumas y restas de una misma variable \"a\" equivale a 20.\n",
+        "* Despeje:\n",
+        "1. Agrupamos términos semejantes: $(6 - 2 + 1)a = 5a$.La ecuación queda: $5a = 20$.\n",
+        "2. Dividimos entre 5: $a = 20 / 5$.Resultado: $a = 4$Problema 7: $4x + 3 = 2x + 11$Planteamiento: Tenemos variables y constantes en ambos lados.\n",
+        "3. Despeje:Pasamos las $x$ a la izquierda: $4x - 2x + 3 = 11 \\rightarrow 2x + 3 = 11$.Pasamos los números a la derecha: $2x = 11 - 3 \\rightarrow 2x =8.  $Dividimos entre 2: $x = 8 / 2$.\n",
+        "* Resultado: $x = 4$"
+      ],
+      "metadata": {
+        "id": "sziFO6N-3OTb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problema 5:  6a - 2a + a = 20\n",
+        "#valor_conocido1 = 6\n",
+        "#valor_conocido2 = 2\n",
+        "#resultado_final = 20\n",
+        "\n",
+        "valor_conocido1 = int(input(\"Ingrese el valor: \"))\n",
+        "valor_conocido2 = int(input(\"Ingrese el valor: \"))\n",
+        "resultado_final = int(input(\"Ingrese el valor: \"))\n",
+        "\n",
+        "a = resultado_final / (valor_conocido1 - valor_conocido2 + 1)\n",
+        "print(f\"a = {a}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SpsR69ud3qv8",
+        "outputId": "caa6d86e-48df-4102-ab51-493b174e3406"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el valor: 6\n",
+            "Ingrese el valor: 2\n",
+            "Ingrese el valor: 20\n",
+            "a = 4.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Problema 7: $4x + 3 = 2x + 11\n",
+        "$Planteamiento: Tenemos variables y constantes en ambos lados.\n",
+        "1. Despeje:Pasamos las $x$ a la izquierda: $4x - 2x + 3 = 11 \\rightarrow 2x + 3 = 11$.Pasamos los números a la derecha: $2x = 11 - 3 \\rightarrow 2x = 8$.Dividimos entre 2: $x = 8 / 2$.\n",
+        "* Resultado: $x = 4$"
+      ],
+      "metadata": {
+        "id": "tcveH-XP3rPv"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problema 7 :4x + 3 = 2x + 11\n",
+        "# valor_conocido1 4\n",
+        "# valor_conocido2 3\n",
+        "# valor_conocido3 2\n",
+        "# resultado_final 11\n",
+        "valor_conocido1 = int(input(\"Ingrese el valor: \"))\n",
+        "valor_conocido2 = int(input(\"Ingrese el valor: \"))\n",
+        "valor_conocido3 = int(input(\"Ingrese el valor: \"))\n",
+        "resultado_final = int(input(\"Ingrese el valor: \"))\n",
+        "\n",
+        "x = (resultado_final - valor_conocido2) / (valor_conocido1 - valor_conocido3)\n",
+        "print(f\"x = {x}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YBG2Rdvl3rok",
+        "outputId": "09baca16-77d9-4c5a-d2b3-96618f0df782"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el valor: 4\n",
+            "Ingrese el valor: 3\n",
+            "Ingrese el valor: 2\n",
+            "Ingrese el valor: 11\n",
+            "x = 4.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Problema 9: $9m + 4 = 5m + 20$ .Planteamiento: Similar al anterior, buscamos equilibrar la balanza.\n",
+        "1. Despeje:Restamos $5m$ en ambos lados: $9m - 5m + 4 = 20 \\rightarrow 4m + 4 = 20$.\n",
+        "2. Restamos 4 en ambos lados: $4m = 20 - 4 \\rightarrow 4m = 16$.\n",
+        "3. Dividimos entre 4: $m = 16 / 4$.\n",
+        "* Resultado: $m = 4$"
+      ],
+      "metadata": {
+        "id": "TZw3H05z3sHT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problema 9: 9m + 4 = 5m + 20\n",
+        "# valor_conocido1 = 9\n",
+        "# valor_conocido2 = 4\n",
+        "# valor_conocido3 = 5\n",
+        "# resultado_final = 20\n",
+        "valor_conocido1 = int(input(\"Ingrese el valor: \"))\n",
+        "valor_conocido2 = int(input(\"Ingrese el valor: \"))\n",
+        "valor_conocido3 = int(input(\"Ingrese el valor: \"))\n",
+        "resultado_final = int(input(\"Ingrese el valor: \"))\n",
+        "\n",
+        "m = (resultado_final - valor_conocido2) / (valor_conocido1 - valor_conocido3)\n",
+        "print(f\"m = {m}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IJ1v_tm43vox",
+        "outputId": "94769fea-4e24-4dc7-97bf-4d03a38f3c3b"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el valor: 9\n",
+            "Ingrese el valor: 4\n",
+            "Ingrese el valor: 5\n",
+            "Ingrese el valor: 20\n",
+            "m = 4.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Problema 11: $6a + 5 = 2a + 21$Planteamiento: Determinar el valor de \"a\" que satisface la igualdad.\n",
+        "1. Despeje:Restamos $2a$ en ambos lados: $6a - 2a + 5 = 21 \\rightarrow 4a + 5 = 21$.\n",
+        "2. Restamos 5 en ambos lados: $4a = 21 - 5 \\rightarrow 4a = 16$.\n",
+        "3. Dividimos entre 4: $a = 16 / 4$.\n",
+        "* Resultado: $a = 4$"
+      ],
+      "metadata": {
+        "id": "aqJ0VDmT3wCL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problema 11: 6a + 5 = 2a + 21\n",
+        "# valor_conocido1 = 6\n",
+        "# valor_conocido2 = 5\n",
+        "# valor_conocido3 = 2\n",
+        "# resultado_final = 21\n",
+        "valor_conocido1 = int(input(\"Ingrese el valor: \"))\n",
+        "valor_conocido2 = int(input(\"Ingrese el valor: \"))\n",
+        "valor_conocido3 = int(input(\"Ingrese el valor: \"))\n",
+        "resultado_final = int(input(\"Ingrese el valor: \"))\n",
+        "\n",
+        "a = (resultado_final - valor_conocido2) / (valor_conocido1 - valor_conocido3)\n",
+        "print(f\"a = {a}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZEHNekSM3whN",
+        "outputId": "459cf78f-5d51-4519-f48b-6169968cf571"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el valor: 6\n",
+            "Ingrese el valor: 5\n",
+            "Ingrese el valor: 2\n",
+            "Ingrese el valor: 21\n",
+            "a = 4.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
